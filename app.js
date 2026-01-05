@@ -1,0 +1,16 @@
+// require("dotenv").config();
+const express = require("express");
+const app = express();
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.static("public"));
+
+app.set("view engine", "ejs");
+
+const chatRoutes = require("./routes/chat");
+app.use("/", chatRoutes);
+
+app.listen(3000, () => {
+  console.log("Chatbot running on http://localhost:3000");
+});

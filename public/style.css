@@ -1,0 +1,19 @@
+body {
+  font-family: Arial;
+  padding: 30px;
+}
+
+input {
+  width: 300px;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 12px;
+}
+
+.reply {
+  margin-top: 20px;
+  background: #f4f4f4;
+  padding: 10px;
+}
